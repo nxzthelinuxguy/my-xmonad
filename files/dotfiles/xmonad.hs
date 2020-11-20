@@ -85,6 +85,9 @@ myModMask = mod4Mask       -- Sets modkey to super/windows key
 myTerminal :: String
 myTerminal = "alacritty"   -- Sets default terminal
 
+mySecTerminal :: String
+mySecTerminal = "gnome-terminal"   -- Sets default terminal
+
 myFileManager :: String
 myFileManager = "pcmanfm"   -- Sets default terminal
 
@@ -175,7 +178,7 @@ treeselectAction a = TS.treeselectAction a
        , Node (TS.TSNode "Castero" "Terminal podcast client" (spawn (myTerminal ++ " -e castero"))) []
        , Node (TS.TSNode "Picom Toggle on/off" "Compositor for window managers" (spawn "killall picom; picom")) []
        , Node (TS.TSNode "Virt-Manager" "Virtual machine manager" (spawn "virt-manager")) []
-       , Node (TS.TSNode "Virtualbox" "Oracle's virtualization program" (spawn "virtualbox")) []
+       , Node (TS.TSNode "Vmware Workstation" "Vmware virtualization program" (spawn "vmware")) []
        ]
    , Node (TS.TSNode "+ Games" "fun and games" (return ()))
        [ Node (TS.TSNode "0 A.D" "Real-time strategy empire game" (spawn "0ad")) []
@@ -746,7 +749,7 @@ myManageHook = composeAll
      , className =? "Gimp"    --> doShift ( myWorkspaces !! 8 )
      , className =? "Gimp"    --> doFloat
      , title =? "Oracle VM VirtualBox Manager"     --> doFloat
-     , className =? "VirtualBox Manager" --> doShift  ( myWorkspaces !! 4 )
+     , className =? "Vmware" --> doShift  ( myWorkspaces !! 4 )
      , (className =? "Firefox" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
      ] <+> namedScratchpadManageHook myScratchPads
 
