@@ -19,6 +19,7 @@ Once you login, you will see a blank/black screen with no wallpaper
 #### Set a wallpaper
 
 ##### Open RUN PROMPT
+#####	MOD is the WINDOWS KEY
 		- MOD + Shift + Enter
 			- Search nitrogen 
 			- Open preferences
