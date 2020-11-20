@@ -45,7 +45,7 @@ Once you login, you will see a blank/black screen with no wallpaper
 	$ ls ~/.xmonad/xmonad.hs 
 
 ##### Open and search for myKey
-##### Below this you will find all the bindings
+##### Below myKey you will find all the bindings
 ##### Refer and change or delete according to your needs
 
 ### Here are some basic key bindings
