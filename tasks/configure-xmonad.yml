@@ -1,0 +1,29 @@
+- name: Xmonad Configuration - Create .xmonad directory
+  become_user: "{{ username }}"
+  file:
+    path: "{{ userhome }}/.xmonad"
+    state: directory
+
+- name: Xmonad Configuration - Create .config/xmobar directory
+  become_user: "{{ username }}"
+  file:
+    path: "{{ userhome }}/.config/xmobar"
+    state: directory
+
+- name: Xmonad Configuration - Copy "{{ userhome }}/.xmonad/xmonad.hs"
+  become_user: "{{ username }}"
+  copy:
+    src: "files/dotfiles/xmonad.hs"
+    dest: "{{ userhome }}/.xmonad/xmonad.hs"
+
+- name: Xmonad Configuration - Copy "{{ userhome }}/.xmonad/xmonadctl.hs"
+  become_user: "{{ username }}"
+  copy:
+    src: "files/dotfiles/xmonadctl.hs"
+    dest: "{{ userhome }}/.xmonad/xmonadctl.hs"
+
+- name: Xmonad Configuration - Copy "{{ userhome }}/.config/xmobar/xmobarrc"
+  become_user: "{{ username }}"
+  copy:
+    src: "files/config/xmobarrc"
+    dest: "{{ userhome }}/.config/xmobar/xmobarrc"
