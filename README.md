@@ -1,4 +1,5 @@
-## NOTE For Key bindings refer ~/.xmonad/xmonad.hs 
+## NOTE For Key bindings refer your xmonad config file
+### It is located at your home directory ~/.xmonad/xmonad.hs 
 At the bottom you will find all the bindings
 Refer and change according to your needs
 
