@@ -1,7 +1,9 @@
+# My config file contains all the settings which you will ever need
 ## NOTE For Key bindings refer your xmonad config file
 ### It is located at your home directory ~/.xmonad/xmonad.hs 
-At the bottom you will find all the bindings
-Refer and change according to your needs
+Open and search for myKey
+Below this you will find all the bindings
+Refer and change or delete according to your needs
 
 ### Here are some basic key bindings
 #####	MOD is the WINDOWS KEY
