@@ -6,4 +6,4 @@
 ##### Clone my repo and run ansible
 	- $ git clone https://github.com/nxzthelinuxguy/my-xmonad.git
 	- $ cd my-xmonad/
-	- $ ansible-playbook -i ansible.cfg setup.yaml (edit the username in setup.yaml before running)
+	- $ ansible-playbook -i ansible.cfg setup.yaml (edit the username in setup.yml before running)

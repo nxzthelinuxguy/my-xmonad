@@ -83,7 +83,10 @@ myModMask :: KeyMask
 myModMask = mod4Mask       -- Sets modkey to super/windows key
 
 myTerminal :: String
-myTerminal = "gnome-terminal"   -- Sets default terminal
+myTerminal = "alacritty"   -- Sets default terminal
+
+myFileManager :: String
+myFileManager = "pcmanfm"   -- Sets default terminal
 
 myBrowser :: String
 myBrowser = "firefox "               -- Sets qutebrowser as browser for tree select
@@ -765,6 +768,7 @@ myKeys =
         , ("M-<Return>", spawn (myTerminal ++ " -e zsh "))
         , ("M-b", spawn (myBrowser ++ ""))
         , ("M-M1-h", spawn (myTerminal ++ " -e htop "))
+        , ("M-S-f", spawn (myFileManager ++ ""))
 
     -- Kill windows
         , ("M-S-c", kill1)                         -- Kill the currently focused client
