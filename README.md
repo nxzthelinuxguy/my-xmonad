@@ -63,7 +63,28 @@ Once you login, you will see a blank/black screen with no wallpaper
 	MOD + Shift + r		==> 	Recompile Xmonad
 ###### PROMPT Bindings (MOD + p is a prefix, press and leave the key DONT HOLD)
 	MOD + Shift + Enter	==>	Opens Run prompt
-	MOD + p + s		==>	SSH prompt 
+	MOD + p + s		==>	SSH prompt
+	MOD + p + m		==>	Manual Page prompt 
+	MOD + p + x		==>	Xmonad prompt 
+	MOD + p + p		==>	get password (requires pass)
+	MOD + p + g		==>	generate password (requires pass)
+	MOD + p + r		==>	remove password (requires pass)
+
+###### SEARCH PROMPT
+	MOD + s + a		==>	Search arch wiki prompt
+	MOD + s + e		==>	Search ebay prompt 
+	MOD + s + g		==>	Search google prompt 
+	MOD + s + h		==>	Search hoogle prompt
+	MOD + s + i		==>	Search google images prompt 
+	MOD + s + n		==>	Search news prompt
+	MOD + s + r		==>	Search reddit prompt 
+	MOD + s + s		==>	Search stackage prompt 
+	MOD + s + t		==>	Search thesaurus prompt 
+	MOD + s + v		==>	Search vocabulary prompt 
+	MOD + s + w		==>	Search wikipedia prompt
+	MOD + s + y		==>	Search youtube prompt
+
+
 ###### TREE SELECT Bindings (CTRL + t is a prefix, press and leave the key DONT HOLD)
 	CTRL + t + t		==>	My Tree view
 ###### GRID SELECT Bindings (CTRL + g is a prefix, press and leave the key DONT HOLD)	

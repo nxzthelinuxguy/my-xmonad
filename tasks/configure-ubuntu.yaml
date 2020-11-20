@@ -10,7 +10,8 @@
         'pcmanfm',
         'fonts-font-awesome',
 	'lxappearance',
-	'htop'
+	'htop',
+	'qalculate-gtk'
     ]
     state: present
 
