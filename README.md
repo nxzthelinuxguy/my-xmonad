@@ -28,7 +28,7 @@ Once you login, you will see a blank/black screen with no wallpaper
 ##### Next setup mouse pointer
 	Open prompt:
 		- MOD + Shift + Enter
-		-  Search for lxappearance
+		- Search for lxappearance
 		- Select desired theme
 		- Select desired cursor
 		- Apply
