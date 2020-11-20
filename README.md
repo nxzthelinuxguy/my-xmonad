@@ -33,11 +33,14 @@ Once you login, you will see a blank/black screen with no wallpaper
 		Select desired cursor
 		Apply
 
-## My config file is bloated, modify it according to your need
-### You may have to change the Tree select, Grid select and Many other settings 
-### Most of the bindings will work for you !
-## NOTE For Key bindings refer your xmonad config file
-### It is located at your home directory ~/.xmonad/xmonad.hs 
+### My config file is a bit bloated, modify it according to your need
+	- You may have to change the Tree select, Grid select and bindings according to your need 
+	- Most of the bindings will work for you !
+
+### NOTE For Key bindings refer your xmonad config file
+	It is located at your home directory
+	$ ls ~/.xmonad/xmonad.hs 
+
 Open and search for myKey
 Below this you will find all the bindings
 Refer and change or delete according to your needs
