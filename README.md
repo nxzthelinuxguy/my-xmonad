@@ -1,5 +1,5 @@
-### How to run it
-
+## NOTE For Key bindings goto docs/my-keybindings.
+### HOW TO RUN IT
 ### PRE ansible script
 
 #### Install Pre-reqs
