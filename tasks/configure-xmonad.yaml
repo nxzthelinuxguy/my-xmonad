@@ -31,8 +31,8 @@
 - name: Xmonad Configuration - Copy "{{ userhome }}/.config/xmobar/xmobarrc"
   become_user: "{{ username }}"
   copy:
-    src: "files/config/xmobarrc"
-    dest: "{{ userhome }}/.config/xmobar/xmobarrc"
+    src: "files/config/xmobarrc0"
+    dest: "{{ userhome }}/.config/xmobar/xmobarrc0"
 
 - name: Xmonad Configuration - Copy "{{ userhome }}/.fonts/"
   become_user: "{{ username }}"
