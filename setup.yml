@@ -7,6 +7,7 @@
 
   tasks:
 
-  - include: tasks/configure-software-ubuntu.yaml
+  - include: tasks/configure-software-ubuntu.yml
     when: ansible_facts["os_family"] == "Debian"
-  - include: tasks/configure-xmonad.yaml
+  - include: tasks/configure-xmonad.yml
+  - include: tasks/configure-user.yml
