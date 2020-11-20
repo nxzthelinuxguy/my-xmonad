@@ -83,10 +83,7 @@ myModMask :: KeyMask
 myModMask = mod4Mask       -- Sets modkey to super/windows key
 
 myTerminal :: String
-myTerminal = "alacritty"   -- Sets default terminal
-
-mySecTerminal :: String
-mySecTerminal = "gnome-terminal"   -- Sets default terminal
+myTerminal = "gnome-terminal"   -- Sets default terminal
 
 myFileManager :: String
 myFileManager = "pcmanfm"   -- Sets default terminal
@@ -768,7 +765,7 @@ myKeys =
         , ("M-S-<Return>", shellPrompt dtXPConfig) -- Shell Prompt
 
     -- Useful programs to have a keybinding for launch
-        , ("M-<Return>", spawn (myTerminal ++ " -e zsh "))
+        , ("M-<Return>", spawn (myTerminal ++ ""))
         , ("M-b", spawn (myBrowser ++ ""))
         , ("M-M1-h", spawn (myTerminal ++ " -e htop "))
         , ("M-S-f", spawn (myFileManager ++ ""))
