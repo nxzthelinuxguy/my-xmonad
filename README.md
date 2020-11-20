@@ -42,9 +42,7 @@ Once you login, you will see a blank/black screen with no wallpaper
 
 #### Set a wallpaper
 
-#####	Open run prompt
-#####	MOD is the WINDOWS KEY
-	Press
+##### Open RUN PROMPT
 		MOD + Shift + Enter
 			Search nitrogen 
 			Open preferences
@@ -52,8 +50,9 @@ Once you login, you will see a blank/black screen with no wallpaper
 			Apply
 
 ##### Next setup mouse pointer
-	Run prompt MOD + Shift + Enter
-	Search for lxappearance
-	Select desired theme
-	Select desired cursor
-	Apply
+	Open prompt
+		MOD + Shift + Enter
+		Search for lxappearance
+		Select desired theme
+		Select desired cursor
+		Apply
