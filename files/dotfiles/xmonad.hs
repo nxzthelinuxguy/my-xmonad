@@ -341,47 +341,47 @@ treeselectAction a = TS.treeselectAction a
            , Node (TS.TSNode "r/Vim" "Subreddit for vim" (spawn (myBrowser ++ "https://www.reddit.com/r/vim/"))) []
            , Node (TS.TSNode "Vi/m StackExchange" "Vi/m related questions" (spawn (myBrowser ++ "https://vi.stackexchange.com/"))) []
            ]
-       , Node (TS.TSNode "My Start Page" "Custom start page for browser" (spawn (myBrowser ++ "file:///home/nawaz/.surf/html/homepage.html"))) []
+       , Node (TS.TSNode "My Start Page" "Custom start page for browser" (spawn (myBrowser ++ "file://$HOME/.surf/html/homepage.html"))) []
        ]
    , Node (TS.TSNode "+ Config Files" "config files that edit often" (return ()))
        [ Node (TS.TSNode "+ emacs configs" "My xmonad config files" (return ()))
-         [ Node (TS.TSNode "doom emacs config.org" "doom emacs config" (spawn (myEditor ++ "/home/nawaz/.doom.d/config.org"))) []
-         , Node (TS.TSNode "doom emacs init.el" "doom emacs init" (spawn (myEditor ++ "/home/nawaz/.doom.d/init.el"))) []
-         , Node (TS.TSNode "doom emacs packages.el" "doom emacs packages" (spawn (myEditor ++ "/home/nawaz/.doom.d/packages.el"))) []
+         [ Node (TS.TSNode "doom emacs config.org" "doom emacs config" (spawn (myEditor ++ "$HOME/.doom.d/config.org"))) []
+         , Node (TS.TSNode "doom emacs init.el" "doom emacs init" (spawn (myEditor ++ "$HOME/.doom.d/init.el"))) []
+         , Node (TS.TSNode "doom emacs packages.el" "doom emacs packages" (spawn (myEditor ++ "$HOME/.doom.d/packages.el"))) []
          ]
        , Node (TS.TSNode "+ xmobar configs" "My xmobar config files" (return ()))
-           [ Node (TS.TSNode "xmobar mon1" "status bar on monitor 1" (spawn (myEditor ++ "/home/nawaz/.config/xmobar/xmobarrc0"))) []
-           , Node (TS.TSNode "xmobar mon2" "status bar on monitor 2" (spawn (myEditor ++ "/home/nawaz/.config/xmobar/xmobarrc2"))) []
-           , Node (TS.TSNode "xmobar mon3" "status bar on monitor 3" (spawn (myEditor ++ "/home/nawaz/.config/xmobar/xmobarrc1"))) []
+           [ Node (TS.TSNode "xmobar mon1" "status bar on monitor 1" (spawn (myEditor ++ "$HOME/.config/xmobar/xmobarrc0"))) []
+           , Node (TS.TSNode "xmobar mon2" "status bar on monitor 2" (spawn (myEditor ++ "$HOME/.config/xmobar/xmobarrc2"))) []
+           , Node (TS.TSNode "xmobar mon3" "status bar on monitor 3" (spawn (myEditor ++ "$HOME/.config/xmobar/xmobarrc1"))) []
            ]
        , Node (TS.TSNode "+ xmonad configs" "My xmonad config files" (return ()))
-           [ Node (TS.TSNode "xmonad.hs" "My XMonad Main" (spawn (myEditor ++ "/home/nawaz/.xmonad/xmonad.hs"))) []
-           , Node (TS.TSNode "MyGridMenu.hs" "My XMonad GridSelect menu" (spawn (myEditor ++ "/home/nawaz/.xmonad/lib/Custom/MyGridMenu.hs"))) []
-           , Node (TS.TSNode "MyKeys.hs" "My XMonad keybindings" (spawn (myEditor ++ "/home/nawaz/.xmonad/lib/Custom/MyKeys.hs"))) []
-           , Node (TS.TSNode "MyLayouts.hs" "My XMonad layouts" (spawn (myEditor ++ "/home/nawaz/.xmonad/lib/Custom/MyLayouts.hs"))) []
-           , Node (TS.TSNode "MyPrompts.hs" "My XMonad prompts" (spawn (myEditor ++ "/home/nawaz/.xmonad/lib/Custom/MyPrompts.hs"))) []
-           , Node (TS.TSNode "MyScratchpads.hs" "My XMonad named scratchpads" (spawn (myEditor ++ "/home/nawaz/.xmonad/lib/Custom/MyScratchpads.hs"))) []
-           , Node (TS.TSNode "MyTreeMenu.hs" "My XMonad TreeSelect menu" (spawn (myEditor ++ "/home/nawaz/.xmonad/lib/Custom/MyTreeMenu.hs"))) []
-           , Node (TS.TSNode "MyVariables.hs" "My XMonad variables" (spawn (myEditor ++ "/home/nawaz/.xmonad/lib/Custom/MyVariables.hs"))) []
+           [ Node (TS.TSNode "xmonad.hs" "My XMonad Main" (spawn (myEditor ++ "$HOME/.xmonad/xmonad.hs"))) []
+           , Node (TS.TSNode "MyGridMenu.hs" "My XMonad GridSelect menu" (spawn (myEditor ++ "$HOME/.xmonad/lib/Custom/MyGridMenu.hs"))) []
+           , Node (TS.TSNode "MyKeys.hs" "My XMonad keybindings" (spawn (myEditor ++ "$HOME/.xmonad/lib/Custom/MyKeys.hs"))) []
+           , Node (TS.TSNode "MyLayouts.hs" "My XMonad layouts" (spawn (myEditor ++ "$HOME/.xmonad/lib/Custom/MyLayouts.hs"))) []
+           , Node (TS.TSNode "MyPrompts.hs" "My XMonad prompts" (spawn (myEditor ++ "$HOME/.xmonad/lib/Custom/MyPrompts.hs"))) []
+           , Node (TS.TSNode "MyScratchpads.hs" "My XMonad named scratchpads" (spawn (myEditor ++ "$HOME/.xmonad/lib/Custom/MyScratchpads.hs"))) []
+           , Node (TS.TSNode "MyTreeMenu.hs" "My XMonad TreeSelect menu" (spawn (myEditor ++ "$HOME/.xmonad/lib/Custom/MyTreeMenu.hs"))) []
+           , Node (TS.TSNode "MyVariables.hs" "My XMonad variables" (spawn (myEditor ++ "$HOME/.xmonad/lib/Custom/MyVariables.hs"))) []
            ]
-       , Node (TS.TSNode "alacritty" "alacritty terminal emulator" (spawn (myEditor ++ "/home/nawaz/.config/alacritty/alacritty.yml"))) []
-       , Node (TS.TSNode "awesome" "awesome window manager" (spawn (myEditor ++ "/home/nawaz/.config/awesome/rc.lua"))) []
-       , Node (TS.TSNode "bashrc" "the bourne again shell" (spawn (myEditor ++ "/home/nawaz/.bashrc"))) []
-       , Node (TS.TSNode "bspwmrc" "binary space partitioning window manager" (spawn (myEditor ++ "/home/nawaz/.config/bspwm/bspwmrc"))) []
-       , Node (TS.TSNode "dmenu config.h" "dynamic menu program" (spawn (myEditor ++ "/home/nawaz/dmenu-distrotube/config.h"))) []
-       , Node (TS.TSNode "dunst" "dunst notifications" (spawn (myEditor ++ "/home/nawaz/.config/dunst/dunstrc"))) []
-       , Node (TS.TSNode "dwm config.h" "dynamic window manager" (spawn (myEditor ++ "/home/nawaz/dwm-distrotube/config.h"))) []
-       , Node (TS.TSNode "herbstluftwm" "herbstluft window manager" (spawn (myEditor ++ "/home/nawaz/.config/herbstluftwm/autostart"))) []
-       , Node (TS.TSNode "neovim init.vim" "neovim text editor" (spawn (myEditor ++ "/home/nawaz/.config/nvim/init.vim"))) []
-       , Node (TS.TSNode "polybar" "easy-to-use status bar" (spawn (myEditor ++ "/home/nawaz/.config/polybar/config"))) []
-       , Node (TS.TSNode "qtile config.py" "qtile window manager" (spawn (myEditor ++ "/home/nawaz/.config/qtile/config.py"))) []
-       , Node (TS.TSNode "qutebrowser config.py" "qutebrowser web browser" (spawn (myEditor ++ "/home/nawaz/.config/qutebrowser/config.py"))) []
-       , Node (TS.TSNode "st config.h" "suckless simple terminal" (spawn (myEditor ++ "/home/nawaz/st-distrotube/config.h"))) []
-       , Node (TS.TSNode "sxhkdrc" "simple X hotkey daemon" (spawn (myEditor ++ "/home/nawaz/.config/sxhkd/sxhkdrc"))) []
-       , Node (TS.TSNode "surf config.h" "surf web browser" (spawn (myEditor ++ "/home/nawaz/surf-distrotube/config.h"))) []
+       , Node (TS.TSNode "alacritty" "alacritty terminal emulator" (spawn (myEditor ++ "$HOME/.config/alacritty/alacritty.yml"))) []
+       , Node (TS.TSNode "awesome" "awesome window manager" (spawn (myEditor ++ "$HOME/.config/awesome/rc.lua"))) []
+       , Node (TS.TSNode "bashrc" "the bourne again shell" (spawn (myEditor ++ "$HOME/.bashrc"))) []
+       , Node (TS.TSNode "bspwmrc" "binary space partitioning window manager" (spawn (myEditor ++ "$HOME/.config/bspwm/bspwmrc"))) []
+       , Node (TS.TSNode "dmenu config.h" "dynamic menu program" (spawn (myEditor ++ "$HOME/dmenu-distrotube/config.h"))) []
+       , Node (TS.TSNode "dunst" "dunst notifications" (spawn (myEditor ++ "$HOME/.config/dunst/dunstrc"))) []
+       , Node (TS.TSNode "dwm config.h" "dynamic window manager" (spawn (myEditor ++ "$HOME/dwm-distrotube/config.h"))) []
+       , Node (TS.TSNode "herbstluftwm" "herbstluft window manager" (spawn (myEditor ++ "$HOME/.config/herbstluftwm/autostart"))) []
+       , Node (TS.TSNode "neovim init.vim" "neovim text editor" (spawn (myEditor ++ "$HOME/.config/nvim/init.vim"))) []
+       , Node (TS.TSNode "polybar" "easy-to-use status bar" (spawn (myEditor ++ "$HOME/.config/polybar/config"))) []
+       , Node (TS.TSNode "qtile config.py" "qtile window manager" (spawn (myEditor ++ "$HOME/.config/qtile/config.py"))) []
+       , Node (TS.TSNode "qutebrowser config.py" "qutebrowser web browser" (spawn (myEditor ++ "$HOME/.config/qutebrowser/config.py"))) []
+       , Node (TS.TSNode "st config.h" "suckless simple terminal" (spawn (myEditor ++ "$HOME/st-distrotube/config.h"))) []
+       , Node (TS.TSNode "sxhkdrc" "simple X hotkey daemon" (spawn (myEditor ++ "$HOME/.config/sxhkd/sxhkdrc"))) []
+       , Node (TS.TSNode "surf config.h" "surf web browser" (spawn (myEditor ++ "$HOME/surf-distrotube/config.h"))) []
        , Node (TS.TSNode "tabbed config.h" "generic tabbed interface" (spawn (myEditor ++ "home/dt/tabbed-distrotube/config.h"))) []
-       , Node (TS.TSNode "xresources" "xresources file" (spawn (myEditor ++ "/home/nawaz/.Xresources"))) []
-       , Node (TS.TSNode "zshrc" "Config for the z shell" (spawn (myEditor ++ "/home/nawaz/.zshrc"))) []
+       , Node (TS.TSNode "xresources" "xresources file" (spawn (myEditor ++ "$HOME/.Xresources"))) []
+       , Node (TS.TSNode "zshrc" "Config for the z shell" (spawn (myEditor ++ "$HOME/.zshrc"))) []
        ]
    , Node (TS.TSNode "+ Screenshots" "take a screenshot" (return ()))
        [ Node (TS.TSNode "Quick fullscreen" "take screenshot immediately" (spawn "scrot -d 1 ~/scrot/%Y-%m-%d-@%H-%M-%S-scrot.png")) []
@@ -897,9 +897,9 @@ myKeys =
 main :: IO ()
 main = do
     -- Launching three instances of xmobar on their monitors.
-    xmproc0 <- spawnPipe "xmobar -x 0 /home/nawaz/.config/xmobar/xmobarrc0"
-    -- xmproc1 <- spawnPipe "xmobar -x 1 /home/nawaz/.config/xmobar/xmobarrc2"
-    -- xmproc2 <- spawnPipe "xmobar -x 2 /home/nawaz/.config/xmobar/xmobarrc1"
+    xmproc0 <- spawnPipe "xmobar -x 0 $HOME/.config/xmobar/xmobarrc0"
+    -- xmproc1 <- spawnPipe "xmobar -x 1 $HOME/.config/xmobar/xmobarrc2"
+    -- xmproc2 <- spawnPipe "xmobar -x 2 $HOME/.config/xmobar/xmobarrc1"
     -- the xmonad, ya know...what the WM is named after!
     xmonad $ ewmh def
         { manageHook = ( isFullscreen --> doFullFloat ) <+> myManageHook <+> manageDocks
