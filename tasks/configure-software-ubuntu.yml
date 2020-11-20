@@ -29,9 +29,8 @@
 - name: Package Installation - System Desktop
   package:
     name: [
-        'rofi',
+        'dmenu',
         'nitrogen',
-        'dunst',
-        'i3blocks'
+        'xmobar'
     ]
     state: present

@@ -10,6 +10,12 @@
     path: "{{ userhome }}/.config/xmobar"
     state: directory
 
+- name: Xmonad Configuration - Create .fonts directory
+  become_user: "{{ username }}"
+  file:
+    path: "{{ userhome }}/.fonts"
+    state: directory
+
 - name: Xmonad Configuration - Copy "{{ userhome }}/.xmonad/xmonad.hs"
   become_user: "{{ username }}"
   copy:
@@ -27,3 +33,9 @@
   copy:
     src: "files/config/xmobarrc"
     dest: "{{ userhome }}/.config/xmobar/xmobarrc"
+
+- name: Xmonad Configuration - Copy "{{ userhome }}/.fonts/"
+  become_user: "{{ username }}"
+  copy:
+    src: "files/fonts/"
+    dest: "{{ userhome }}/.fonts/"
