@@ -1,4 +1,6 @@
-## NOTE For Key bindings goto docs/my-keybindings.
+## NOTE For Key bindings refer ~/.xmonad/xmonad.hs 
+At the bottom you will find all the bindings
+Refer and change according to your needs
 
 ### Here are some basic key bindings
 #####	MOD is the WINDOWS KEY
