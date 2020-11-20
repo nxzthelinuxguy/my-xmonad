@@ -22,7 +22,14 @@ Once you login, you will see a blank screen with no wallpaper
 	To open RUN prompt
 		MOD + Left Shift + Enter
 #####		MOD is the windows key
-#####	Search nitrogen 
-#####	Open preferences
-#####	Select Pictures 
-#####	Apply 
+		#####	Search nitrogen 
+		#####	Open preferences
+		#####	Select Pictures 
+		#####	Apply 
+
+##### Next setup mouse pointer
+	Run prompt
+	Search for lxappearance
+	Select desired theme
+	Select desired cursor
+	Apply
