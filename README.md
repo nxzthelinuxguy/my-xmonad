@@ -1,4 +1,27 @@
 ## NOTE For Key bindings goto docs/my-keybindings.
+
+### Here are some basic key bindings
+#####	MOD is the WINDOWS KEY
+#####	MOD1 is the ALT KEY
+###### BASIC BINDINGS
+	MOD + Enter		==>	Opens terminal
+	MOD + b			==>	Opens firefox browser
+	MOD + Shift + c		==>	Close currently selected window
+	MOD + Shift + a		==>	Close all windows
+###### Xmonad Bindings
+	MOD + q			==>	Restart Xmonad  (useful when xmonad.hs is modified)
+	MOD + Shift + q		==>	Logout
+	MOD + Shift + r		==> 	Recompile Xmonad
+###### PROMPT Bindings (MOD + p is a prefix, press and leave the key DONT HOLD)
+	MOD + Shift + Enter	==>	Opens Run prompt
+	MOD + p + s		==>	SSH prompt 
+###### TREE SELECT Bindings (CTRL + t is a prefix, press and leave the key DONT HOLD)
+	CTRL + t + t		==>	My Tree view
+###### GRID SELECT Bindings (CTRL + g is a prefix, press and leave the key DONT HOLD)	
+	CTRL + g + g		==>	My Grid view
+	CTRL + g + t		==>	Tab view of open windows
+	CTRL + g + b		==>	Bring selected view to current workspace
+
 ### HOW TO RUN IT
 ### PRE ansible script
 
@@ -11,24 +34,25 @@
 	 $ ansible-playbook -i ansible.cfg setup.yaml      (edit the username in setup.yml before running)
 
 ### POST ansible script
-After the ansible setup is finished successfully you need to logout or reboot.
+	Take a clean reboot.
 
-#### In the login screen select Xmonad from the bottom right conky wheel 
+#### In the login screen 
+	select Xmonad in the bottom right wheel  
+Once you login, you will see a blank/black screen with no wallpaper
 
-Once you login, you will see a blank screen with no wallpaper
-#### Set wallpaper
+#### Set a wallpaper
 
 #####	Open run prompt
-	To open RUN prompt
-		MOD + Left Shift + Enter
-#####		MOD is the windows key
-		#####	Search nitrogen 
-		#####	Open preferences
-		#####	Select Pictures 
-		#####	Apply 
+#####	MOD is the WINDOWS KEY
+	Press
+		MOD + Shift + Enter
+			Search nitrogen 
+			Open preferences
+			Select Pictures 
+			Apply
 
 ##### Next setup mouse pointer
-	Run prompt
+	Run prompt MOD + Shift + Enter
 	Search for lxappearance
 	Select desired theme
 	Select desired cursor
