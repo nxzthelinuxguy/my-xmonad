@@ -1,4 +1,6 @@
-# My config file contains all the settings which you will ever need
+# My config file is bloated, modify it according to your need
+## You may have to change the Tree select, Grid select and Many other settings 
+## Most of the bindings will work for you !
 ## NOTE For Key bindings refer your xmonad config file
 ### It is located at your home directory ~/.xmonad/xmonad.hs 
 Open and search for myKey
