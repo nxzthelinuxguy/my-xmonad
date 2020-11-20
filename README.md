@@ -19,31 +19,34 @@ Once you login, you will see a blank/black screen with no wallpaper
 #### Set a wallpaper
 
 ##### Open RUN PROMPT
-		MOD + Shift + Enter
-			Search nitrogen 
-			Open preferences
-			Select Pictures 
-			Apply
+		- MOD + Shift + Enter
+			- Search nitrogen 
+			- Open preferences
+			- Select Pictures 
+			- Apply
 
 ##### Next setup mouse pointer
-	Open prompt
-		MOD + Shift + Enter
-		Search for lxappearance
-		Select desired theme
-		Select desired cursor
-		Apply
+	Open prompt:
+		- MOD + Shift + Enter
+		-  Search for lxappearance
+		- Select desired theme
+		- Select desired cursor
+		- Apply
 
-### My config file is a bit bloated, modify it according to your need
-	- You may have to change the Tree select, Grid select and bindings according to your need 
-	- Most of the bindings will work for you !
+### My config file is a bit bloated with lots of settings, modify it according to your need
+### You may have to change 
+	- Tree select
+	- Grid select 
+	- And bindings according to your need 
+### Most of the bindings will work for you !
 
 ### NOTE For Key bindings refer your xmonad config file
-	It is located at your home directory
+#### It is located at your home directory
 	$ ls ~/.xmonad/xmonad.hs 
 
-Open and search for myKey
-Below this you will find all the bindings
-Refer and change or delete according to your needs
+##### Open and search for myKey
+##### Below this you will find all the bindings
+##### Refer and change or delete according to your needs
 
 ### Here are some basic key bindings
 #####	MOD is the WINDOWS KEY
