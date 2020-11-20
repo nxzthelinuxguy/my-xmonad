@@ -51,7 +51,7 @@ Once you login, you will see a blank/black screen with no wallpaper
 ### Here are some basic key bindings
 #####	MOD is the WINDOWS KEY
 #####	MOD1 is the ALT KEY
-###### BASIC BINDINGS
+###### Basic Bindings
 	MOD + Enter		==>	Opens terminal
 	MOD + b			==>	Opens firefox browser
 	MOD + Shift + c		==>	Close currently selected window
