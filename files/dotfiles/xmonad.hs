@@ -83,7 +83,7 @@ myModMask :: KeyMask
 myModMask = mod4Mask       -- Sets modkey to super/windows key
 
 myTerminal :: String
-myTerminal = "gnome-terminal"   -- Sets default terminal
+myTerminal = "alacritty"   -- Sets default terminal
 
 myFileManager :: String
 myFileManager = "pcmanfm"   -- Sets default terminal
@@ -741,6 +741,7 @@ myManageHook = composeAll
      -- I'm doing it this way because otherwise I would have to write out the full
      -- name of my workspaces, and the names would very long if using clickable workspaces.
      [ title =? "Mozilla Firefox"     --> doShift ( myWorkspaces !! 1 )
+     , className =? "Pcmanfm"    --> doShift ( myWorkspaces !! 3 )
      , className =? "mpv"     --> doShift ( myWorkspaces !! 7 )
      , className =? "vlc"     --> doShift ( myWorkspaces !! 7 )
      , className =? "Gimp"    --> doShift ( myWorkspaces !! 8 )
@@ -853,31 +854,31 @@ myKeys =
         , ("M-u <Space>", spawn "mocp --toggle-pause")
 
     -- Emacs (CTRL-e followed by a key)
-        , ("C-e e", spawn "emacsclient -c -a 'emacs'")                            -- start emacs
-        , ("C-e b", spawn "emacsclient -c -a 'emacs' --eval '(ibuffer)'")         -- list emacs buffers
-        , ("C-e d", spawn "emacsclient -c -a 'emacs' --eval '(dired nil)'")       -- dired emacs file manager
-        , ("C-e i", spawn "emacsclient -c -a 'emacs' --eval '(erc)'")             -- erc emacs irc client
-        , ("C-e m", spawn "emacsclient -c -a 'emacs' --eval '(mu4e)'")            -- mu4e emacs email client
-        , ("C-e n", spawn "emacsclient -c -a 'emacs' --eval '(elfeed)'")          -- elfeed emacs rss client
-        , ("C-e s", spawn "emacsclient -c -a 'emacs' --eval '(eshell)'")          -- eshell within emacs
-        , ("C-e t", spawn "emacsclient -c -a 'emacs' --eval '(mastodon)'")        -- mastodon within emacs
-        , ("C-e v", spawn "emacsclient -c -a 'emacs' --eval '(+vterm/here nil)'") -- vterm within emacs
-        -- emms is an emacs audio player. I set it to auto start playing in a specific directory.
-        , ("C-e a", spawn "emacsclient -c -a 'emacs' --eval '(emms)' --eval '(emms-play-directory-tree \"~/Music/Non-Classical/70s-80s/\")'")
+    --    , ("C-e e", spawn "emacsclient -c -a 'emacs'")                            -- start emacs
+    --    , ("C-e b", spawn "emacsclient -c -a 'emacs' --eval '(ibuffer)'")         -- list emacs buffers
+    --    , ("C-e d", spawn "emacsclient -c -a 'emacs' --eval '(dired nil)'")       -- dired emacs file manager
+    --    , ("C-e i", spawn "emacsclient -c -a 'emacs' --eval '(erc)'")             -- erc emacs irc client
+    --    , ("C-e m", spawn "emacsclient -c -a 'emacs' --eval '(mu4e)'")            -- mu4e emacs email client
+    --    , ("C-e n", spawn "emacsclient -c -a 'emacs' --eval '(elfeed)'")          -- elfeed emacs rss client
+    --    , ("C-e s", spawn "emacsclient -c -a 'emacs' --eval '(eshell)'")          -- eshell within emacs
+    --    , ("C-e t", spawn "emacsclient -c -a 'emacs' --eval '(mastodon)'")        -- mastodon within emacs
+    --    , ("C-e v", spawn "emacsclient -c -a 'emacs' --eval '(+vterm/here nil)'") -- vterm within emacs
+    --    -- emms is an emacs audio player. I set it to auto start playing in a specific directory.
+    --    , ("C-e a", spawn "emacsclient -c -a 'emacs' --eval '(emms)' --eval '(emms-play-directory-tree \"~/Music/Non-Classical/70s-80s/\")'")
 
     -- Multimedia Keys
-        , ("<XF86AudioPlay>", spawn (myTerminal ++ "mocp --play"))
-        , ("<XF86AudioPrev>", spawn (myTerminal ++ "mocp --previous"))
-        , ("<XF86AudioNext>", spawn (myTerminal ++ "mocp --next"))
-        -- , ("<XF86AudioMute>",   spawn "amixer set Master toggle")  -- Bug prevents it from toggling correctly in 12.04.
-        , ("<XF86AudioLowerVolume>", spawn "amixer set Master 5%- unmute")
-        , ("<XF86AudioRaiseVolume>", spawn "amixer set Master 5%+ unmute")
-        , ("<XF86HomePage>", spawn "firefox")
-        , ("<XF86Search>", safeSpawn "firefox" ["https://www.duckduckgo.com/"])
-        , ("<XF86Mail>", runOrRaise "geary" (resource =? "thunderbird"))
-        , ("<XF86Calculator>", runOrRaise "gcalctool" (resource =? "gcalctool"))
-        , ("<XF86Eject>", spawn "toggleeject")
-        , ("<Print>", spawn "scrotd 0")
+    --    , ("<XF86AudioPlay>", spawn (myTerminal ++ "mocp --play"))
+    --    , ("<XF86AudioPrev>", spawn (myTerminal ++ "mocp --previous"))
+    --    , ("<XF86AudioNext>", spawn (myTerminal ++ "mocp --next"))
+    --    -- , ("<XF86AudioMute>",   spawn "amixer set Master toggle")  -- Bug prevents it from toggling correctly in 12.04.
+    --    , ("<XF86AudioLowerVolume>", spawn "amixer set Master 5%- unmute")
+    --    , ("<XF86AudioRaiseVolume>", spawn "amixer set Master 5%+ unmute")
+    --    , ("<XF86HomePage>", spawn "firefox")
+    --    , ("<XF86Search>", safeSpawn "firefox" ["https://www.duckduckgo.com/"])
+    --    , ("<XF86Mail>", runOrRaise "geary" (resource =? "thunderbird"))
+    --    , ("<XF86Calculator>", runOrRaise "gcalctool" (resource =? "gcalctool"))
+    --    , ("<XF86Eject>", spawn "toggleeject")
+    --    , ("<Print>", spawn "scrotd 0")
         ]
     -- Appending search engine prompts to keybindings list.
     -- Look at "search engines" section of this config for values for "k".
