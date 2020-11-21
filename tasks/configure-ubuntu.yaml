@@ -19,6 +19,8 @@
   package:
     name: [
         'binutils',
+	'build-essential',
+	'gcc'
     ]
     state: present
 
@@ -33,7 +35,6 @@
 - name: Package Installation - System Desktop
   package:
     name: [
-        'dmenu',
         'nitrogen',
         'xmobar'
     ]

@@ -16,25 +16,37 @@
     path: "{{ userhome }}/.fonts"
     state: directory
 
-- name: Xmonad Configuration - Copy "{{ userhome }}/.xmonad/xmonad.hs"
+- name: Xmonad Configuration - Create .local/bin directory
+  become_user: "{{ username }}"
+  file:
+    path: "{{ userhome }}/.local/bin"
+    state: directory
+
+- name: Xmonad Configuration - Copy Xmonad Config "{{ userhome }}/.xmonad/xmonad.hs"
   become_user: "{{ username }}"
   copy:
     src: "files/dotfiles/xmonad.hs"
     dest: "{{ userhome }}/.xmonad/xmonad.hs"
 
-- name: Xmonad Configuration - Copy "{{ userhome }}/.xmonad/xmonadctl.hs"
+- name: Xmonad Configuration - Copy XmonadCTL to "{{ userhome }}/.xmonad/xmonadctl.hs"
   become_user: "{{ username }}"
   copy:
     src: "files/dotfiles/xmonadctl.hs"
     dest: "{{ userhome }}/.xmonad/xmonadctl.hs"
 
-- name: Xmonad Configuration - Copy "{{ userhome }}/.config/xmobar/xmobarrc"
+- name: Xmonad Configuration - Copy Xmobar Config to "{{ username }}/.config/xmobar/"
   become_user: "{{ username }}"
   copy:
     src: "files/config/xmobarrc0"
     dest: "{{ userhome }}/.config/xmobar/xmobarrc0"
 
-- name: Xmonad Configuration - Copy "{{ userhome }}/.fonts/"
+- name: Xmonad Configuration - Copy Xmobar custom scripts to "{{ username }}/.local/bin/"
+  become_user: "{{ username }}"
+  copy:
+    src: "files/xmobar_custom-scripts/"
+    dest: "{{ userhome }}/.local/bin/"
+
+- name: Xmonad Configuration - Copy fonts to "{{ username }}/.fonts"
   become_user: "{{ username }}"
   copy:
     src: "files/fonts/"
