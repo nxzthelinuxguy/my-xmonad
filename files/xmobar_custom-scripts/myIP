@@ -1,0 +1,4 @@
+#!/bin/bash
+
+myip="$(ip a s | grep wlo1 | grep inet | awk '{print $2}' | cut -d '/' -f 1)"
+echo "$myip"
